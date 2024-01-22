@@ -18,7 +18,7 @@ pipeline {
                 script {
                     docker.withRegistry('https://registry.hub.docker.com', 'jenkins_dockerhub_tth_login') {
                         app.push("${env.BUILD_NUMBER}")
-                        app.push("latest")
+                        //app.push("latest")
                     }
                 }
             }
